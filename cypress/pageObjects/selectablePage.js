@@ -8,4 +8,8 @@ export class SelectablePage extends BasePage {
   static get evenNumber() {
     return cy.get('[class="list-group-item list-group-item-action"]');
   }
+
+  static get activeEvenNumber() {
+    return cy.get('[class="list-group-item active list-group-item-action"]');
+  }
 }

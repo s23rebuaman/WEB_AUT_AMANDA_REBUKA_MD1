@@ -20,6 +20,11 @@ describe("demoqa scenarios", () => {
       SelectablePage.evenNumber.contains("Four").click();
       SelectablePage.evenNumber.contains("Six").click();
       SelectablePage.evenNumber.contains("Eight").click();
+      // Validate that “Two”, “Four”, “Six”, “Eight” are highlighted
+      SelectablePage.activeEvenNumber.should('contain.text', 'Two');
+      SelectablePage.activeEvenNumber.should('contain.text', 'Four');
+      SelectablePage.activeEvenNumber.should('contain.text', 'Six');
+      SelectablePage.activeEvenNumber.should('contain.text', 'Eight');
     });
   });
 });
