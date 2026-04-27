@@ -5,7 +5,7 @@ export class SelectablePage extends BasePage {
     return cy.get("#demo-tab-grid");
   }
 
-  static get evenNumber() {
+  static get numberBox() {
     return cy.get('[class="list-group-item list-group-item-action"]');
   }
 
